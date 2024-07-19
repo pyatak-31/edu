@@ -1,0 +1,45 @@
+// === COMMON ===
+body {
+    height: 100vh;
+    // @include scrollbar();
+    
+    // background-color: $white;
+    
+    // &.locked {
+    //     overflow: hidden;
+    // }
+}
+
+* {
+    font-family: Theater, Arial, Helvetica, sans-serif;
+	scrollbar-color: $primary #fff; /*Цвет скролла, цвет ползунка*/
+	scrollbar-width: thin; /*Толщина скролла thin, auto*/
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: $primary !important;
+        border: .5px solid $dark !important;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background-color: transparent;
+    }
+}
+
+.container {
+    max-width: $container-width;
+    width: 100%;
+    margin: 0 auto; 
+    padding-right: 15px;
+    padding-left: 15px;
+    
+    @media (min-width: $sm) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
