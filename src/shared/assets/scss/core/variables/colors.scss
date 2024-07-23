@@ -1,10 +1,69 @@
 // === COLORS ===
-$background: #f5f7f8;
-$primary: #4D455D;
+$black: #000000;
+$white: #FFFFFF;
+
+$gray-200: #CCCCCC;
+$gray-300: #B2B2B2;
+$gray-400: #939393;
+$gray-500: #828282;
+$gray-600: #656565;
+$gray-700: #555555;
+$gray-800: #333333;
+$gray-900: #222222;
+$gray-960: #0A0A0A;
+
+$steel-gray-10: #FAFBFC;
+$steel-gray-20: #F7F8FA;
+$steel-gray-40: #F2F3F5;
+$steel-gray-60: #EDEEF0;
+$steel-gray-80: #E7E8EC;
+$steel-gray-100: #DCE1E6;
+$steel-gray-120: #D3D9DE;
+$steel-gray-140: #C5D0DB;
+$steel-gray-200: #AEB7C2;
+$steel-gray-300: #99A2AD;
+$steel-gray-400: #818C99;
+$steel-gray-500: #6F7985;
+$steel-gray-540: #626D7A;
+$steel-gray-600: #4E5966;
+
+$blue-400: #5181B8;
+$blue-420: #4A76A8;
+$blue-600: #2A5885;
+$blue-640: #224B7A;
+$blue-800: #1D3A5C;
+
+$light-blue-40: #E5EBF1;
+$light-blue-80: #DFE6ED;
+$light-blue-100: #DAE2EA;
+$light-blue-300: #9EB4C8;
+$light-blue-400: #7996B2;
+$light-blue-500: #577CA1;
+$light-blue-700: #45688E;
+
+$blue_bright: #5C9CE6;
+$turquoise: #63B9BA;
+$green: #4BB34B;
+$green_dark: #43A843;
+$green_nice: #3DCC4B;
+$green_light: #DEF0D3;
+$green_light_2: #f8fffb;
+$red: #E64646;
+$red_nice: #FF3347;
+$red_light: #FFD6CC;
+$orange_fire: #F05C44;
+$orange_prominent: #FF724C;
+$orange: #FFA000;
+$yellow: #FFC107;
+$yellow_light: #FAEFD2;
+$azure: #2787F5;
+$purple: #65558f;
+
+$primary: $purple;
 $dark: #001119;
-$success: #8cb35b;
-$error: #bd2224;
-$warning: #f39319;
-$info: #7cb5c8;
+$success: $green;
+$error: $red;
+$warning: $orange;
+$info: $blue_bright;
 $secondary: #6c757d;
 $light: #dee2e6;

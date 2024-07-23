@@ -1,23 +1,26 @@
-<template>
-  <div>
-    <h1>HI</h1>
-    p {{ loading }}
-  </div>
-</template>
-
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
-
-const loading = ref(false)
-
-onMounted(async () => {
-  loading.value = true;
-  
- 
-});
+import { UIContainer, UIH1 } from "@/shared/ui";
+import { WidgetSubjectNav } from "@/widgets/SubjectNav";
 
 </script>
 
-<style scoped>
+<template>
+  <section :class="$style.main">
+    <UIContainer>
+      <UIH1 title="Главное меню" />
+      
+      <WidgetSubjectNav :class="$style.main_nav" />
+    </UIContainer>
+  </section>
+</template>
 
+<style lang="scss" module>
+.main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main_nav {
+  margin-top: 30px;
+}
 </style>
