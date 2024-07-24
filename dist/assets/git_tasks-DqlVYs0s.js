@@ -1,1 +1,0 @@
-const t=[{id:"git-1",subject:"GIT",title:"Пройти интерактив GitHowTo",description:"Нужно пройти обучающий интерактивный тур на сайте.",condition:"Сообщить о прохождении.",links:["https://githowto.com/ru"],isDone:!1,isReady:!0}];export{t as G};
