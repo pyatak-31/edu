@@ -2,9 +2,9 @@
 import { CSS_MATERIALS } from '@/entities/materials';
 import { CSS_TASK_LIST } from '@/entities/tasks';
 import { WidgetSubjectTemplate } from '@/widgets/SubjectTemplate';
-import { routeGuard } from '../middleware';
+import { subjectPageRouteGuard } from '@/shared/middleware';
 
-routeGuard();
+subjectPageRouteGuard('CSS');
 </script>
 
 <template>

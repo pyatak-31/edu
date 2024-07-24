@@ -7,7 +7,7 @@ type Size = 'S' | 'M' | 'L';
 
 interface Props {
   name: IconName,
-  size: Size,
+  size?: Size,
 }
 const props = withDefaults(defineProps<Props>(), {
   size: 'M',

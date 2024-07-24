@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { HTML_MATERIALS } from '@/entities/materials';
 import { HTML_TASK_LIST } from '@/entities/tasks';
+import { subjectPageRouteGuard } from '@/shared/middleware';
 import { WidgetSubjectTemplate } from '@/widgets/SubjectTemplate';
-import { routeGuard } from '../middleware';
 
-routeGuard();
+subjectPageRouteGuard('HTML');
 </script>
 
 <template>

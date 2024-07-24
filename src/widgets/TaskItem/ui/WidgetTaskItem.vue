@@ -43,6 +43,7 @@ const taskStatusText = computed(() => props.task.isDone ? 'Выполнено' :
         v-for="link in task.links"
         :key="link"
         :href="link"
+        target="_blank"
       >
         {{ link }}
       </a>

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { JAVASCRIPT_MATERIALS } from '@/entities/materials';
 import { JAVASCRIPT_TASK_LIST } from '@/entities/tasks';
+import { subjectPageRouteGuard } from '@/shared/middleware';
 import { WidgetSubjectTemplate } from '@/widgets/SubjectTemplate';
-import { routeGuard } from '../middleware';
 
-routeGuard();
+subjectPageRouteGuard('JavaScript');
 </script>
 
 <template>
