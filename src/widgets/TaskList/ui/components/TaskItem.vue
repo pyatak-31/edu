@@ -14,6 +14,7 @@ const $style = useCssModule();
 const taskLinkClassList = computed(() => ({
   [$style.task_link]: true,
   [$style.task_link_done]: props.task.isDone,
+  [$style.task_link_not_ready]: !props.task.isReady,
 }));
 
 const iconClassList = computed(() => ({
@@ -34,6 +35,7 @@ const iconName = computed(() => props.task.isDone ? 'check' : 'x');
     </RouterLink>
 
     <UIIcon
+      v-if="task.isReady"
       :class="iconClassList"
       :name="iconName"
       title="Не выполнена"
@@ -58,6 +60,11 @@ const iconName = computed(() => props.task.isDone ? 'check' : 'x');
 
   &_done {
     color: $green;
+  }
+
+  &_not_ready {
+    color: $gray-400;
+    pointer-events: none;
   }
 }
 
