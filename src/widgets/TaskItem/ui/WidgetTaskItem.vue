@@ -21,8 +21,17 @@ const taskStatusText = computed(() => props.task.isDone ? 'Выполнено' :
         Описание задачи
       </h3>
       <p :class="$style.task_text">
-        {{ task.description }}
+        {{ task.description.text }}
       </p>
+      <ul v-if="task.description.instructions" :class="$style.task_description_list">
+        <li
+          :class="$style.task_description_item"
+          v-for="instruction in task.description.instructions"
+          :key="instruction"
+        >
+          {{ instruction }}
+        </li>
+      </ul>
     </div>
 
     <div :class="$style.part">
@@ -91,5 +100,19 @@ const taskStatusText = computed(() => props.task.isDone ? 'Выполнено' :
   &:hover {
     text-decoration: underline; 
   }
+}
+
+.task_description_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+  padding-left: 40px;
+  list-style: circle;
+}
+
+.task_description_item {
+  font-size: 18px;
+  line-height: 22px;
 }
 </style>

@@ -5,7 +5,9 @@ export const JAVASCRIPT_TASK_LIST: Array<Task> = [
     id: 'js-1',
     subject: 'JavaScript',
     title: '?',
-    description: '?',
+    description: {
+      text: '?',
+    },
     condition: '?',
     links: [
       '?'

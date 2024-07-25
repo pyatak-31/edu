@@ -5,7 +5,9 @@ export const HTML_TASK_LIST: Array<Task> = [
     id: 'html-1',
     subject: 'HTML',
     title: '?',
-    description: '?',
+    description: {
+      text: '?',
+    },
     condition: '?',
     links: [
       '?'
