@@ -1,4 +1,4 @@
-import type { Task } from "@/shared/types";
+import type { Task } from "../types";
 
 export const CSS_TASK_LIST: Array<Task> = [
   {

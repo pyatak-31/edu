@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import type { Task } from '@/entities/tasks';
 import { TASK_PAGE_NAME } from '@/shared/constants';
-import type { Task } from '@/shared/types';
 import { UIIcon } from '@/shared/ui';
 import { computed, useCssModule } from 'vue';
 

@@ -1,11 +1,11 @@
 <script setup lang="ts">
+import type { Subject } from "@/entities/subjects";
 import {
   CSS_PAGE_NAME,
   GIT_PAGE_NAME,
   HTML_PAGE_NAME,
   JAVASCRIPT_PAGE_NAME,
 } from "@/shared/constants";
-import type { Subject } from "@/shared/types";
 import { computed, useCssModule } from "vue";
 
 interface Props {

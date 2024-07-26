@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { MaterialLink } from '@/shared/types';
+import type { MaterialLink } from '@/entities/materials';
 import { computed, useCssModule } from 'vue';
 
 interface Props {

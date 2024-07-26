@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Task } from '@/shared/types';
+import type { Task } from '@/entities/tasks';
 import { UIH1 } from '@/shared/ui';
 import { computed } from 'vue';
 

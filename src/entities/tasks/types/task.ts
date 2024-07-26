@@ -1,4 +1,4 @@
-import type { SubjectName } from "./subject";
+import type { SubjectName } from "@/entities/subjects";
 
 interface TaskDescription {
   text: string,

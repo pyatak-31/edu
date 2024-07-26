@@ -1,4 +1,4 @@
-import type { MaterialLink } from "@/shared/types";
+import type { MaterialLink } from "../types";
 
 export const GIT_MATERIALS: Array<MaterialLink> = [
   {

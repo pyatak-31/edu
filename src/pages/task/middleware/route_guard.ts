@@ -1,4 +1,4 @@
-import type { Task } from "@/shared/types";
+import type { Task } from "@/entities/tasks";
 import { useRouter } from "vue-router";
 
 export const routeGuard = (task: Task | undefined) => {

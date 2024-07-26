@@ -1,4 +1,4 @@
-import type { Task } from "@/shared/types";
+import type { Task } from "../types";
 
 export const GIT_TASK_LIST: Array<Task> = [
   {
@@ -12,7 +12,7 @@ export const GIT_TASK_LIST: Array<Task> = [
     links: [
       'https://githowto.com/ru'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -72,6 +72,6 @@ export const GIT_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
 ];

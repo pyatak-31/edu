@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Task } from '@/shared/types';
+import type { Task } from '@/entities/tasks';
 import { TaskItem } from './components';
 
 interface Props {

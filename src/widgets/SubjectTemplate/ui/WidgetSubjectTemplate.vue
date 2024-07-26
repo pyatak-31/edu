@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import type { MaterialLink, Task } from '@/shared/types';
+import type { MaterialLink } from '@/entities/materials';
+import type { Task } from '@/entities/tasks';
 import { GoToMainPageButton, UIContainer, UIH1, UIH2 } from '@/shared/ui';
 import { WidgetMaterialList } from '@/widgets/MaterialList';
 import { WidgetTaskList } from '@/widgets/TaskList';
