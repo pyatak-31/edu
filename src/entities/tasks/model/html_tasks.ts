@@ -4,9 +4,23 @@ export const HTML_TASK_LIST: Array<Task> = [
   {
     id: 'html-1',
     subject: 'HTML',
+    title: 'Тренажеры HTML Academy',
+    description: {
+      text: 'Пройти тренажеры HTML Academy по HTML (CSSом позднее займемся)',
+    },
+    condition: 'Сообщить о прохождении.',
+    links: [
+      'https://htmlacademy.ru/courses/basic-html-css'
+    ],
+    isDone: false,
+    isReady: true,
+  },
+  {
+    id: 'html-2',
+    subject: 'HTML',
     title: 'Каркас страницы',
     description: {
-      text: 'В пустом html файле (html/1) написать базовую разметку. К каждой составляющей своими словами добавить комментарий, описывающий данную часть. Нужно добавить:',
+      text: 'В пустом html файле (html/1) написать базовую разметку. К каждой составляющей своими словами добавить комментарий (важно твое понимание), описывающий данную часть. Нужно добавить:',
       instructions: [
         'doctype',
         'html',
