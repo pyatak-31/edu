@@ -20,7 +20,7 @@ const taskStatusText = computed(() => props.task.isDone ? 'Выполнено' :
       <h3 :class="$style.part_title">
         Описание задачи
       </h3>
-      <p :class="$style.task_text">
+      <p :class="[$style.task_text, $style.task_text_description]">
         {{ task.description.text }}
       </p>
       <ul v-if="task.description.instructions" :class="$style.task_description_list">
@@ -91,11 +91,17 @@ const taskStatusText = computed(() => props.task.isDone ? 'Выполнено' :
 
 .task_text { 
   font-size: 20px;
+  line-height: 24px;
+
+  &_description {
+    max-width: 1000px;
+  }
 }
 
 .task_link {
   color: $blue-600;
   font-size: 20px;
+  line-height: 24px;
 
   &:hover {
     text-decoration: underline; 

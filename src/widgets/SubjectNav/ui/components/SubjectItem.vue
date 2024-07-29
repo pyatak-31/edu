@@ -17,6 +17,7 @@ const $style = useCssModule();
 
 const subjectLinkClassList = computed(() => ({
   [$style.subject_link]: true,
+  [$style.done]: props.subject.isDone,
   [$style.not_ready]: !props.subject.isReady,
   [subjectLinkSpecialClass.value]: true,
 }));
@@ -139,5 +140,9 @@ const routeName = computed(() => {
   box-shadow: 0;
   filter: blur(2px) grayscale(1);
   pointer-events: none;
+}
+
+.done {
+  background-color: $green-light;
 }
 </style>

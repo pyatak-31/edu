@@ -20,7 +20,7 @@ export const HTML_TASK_LIST: Array<Task> = [
     subject: 'HTML',
     title: 'Каркас страницы',
     description: {
-      text: 'В пустом html файле (html/1) написать базовую разметку. К каждой составляющей своими словами добавить комментарий (важно твое понимание), описывающий данную часть. Нужно добавить:',
+      text: 'В пустом html файле написать базовую разметку. К каждой составляющей своими словами добавить комментарий (важно твое понимание), описывающий данную часть. Нужно добавить:',
       instructions: [
         'doctype',
         'html',
@@ -35,9 +35,87 @@ export const HTML_TASK_LIST: Array<Task> = [
         'подключить js файл (отсутствующий) всеми доступными способами',
       ],
     },
-    condition: 'Запушить изменения и создать Pull Request в Github у себя в форке репозитория',
+    condition: 'Запушить изменения и создать Pull Request в Github',
     links: [
-      'https://github.com/pyatak-31/tasks'
+      'https://github.com/pyatak-31/tasks/html/1'
+    ],
+    isDone: false,
+    isReady: false,
+  },
+  {
+    id: 'html-3',
+    subject: 'HTML',
+    title: 'Семантика HTML',
+    description: {
+      text: 'В html файле нужно в body использовать секционные теги. Они должны быть использованы не перечислением, а в тех местах где они должны использоваться. Внутри каждого тега своими словами описать семантический смысл этого тега, указав название тега, перед описанием. Нужно использовать теги:',
+      instructions: [
+        'header',
+        'footer',
+        'main',
+        'aside',
+        'nav',
+        'section',
+        'article'
+      ],
+    },
+    condition: 'Запушить изменения и создать Pull Request в Github',
+    links: [
+      'https://github.com/pyatak-31/tasks/html/2'
+    ],
+    isDone: false,
+    isReady: false,
+  },
+  {
+    id: 'html-4',
+    subject: 'HTML',
+    title: 'Таблицы',
+    description: {
+      text: 'В html файле нужно в body создать таблицу на произвольную тему. Должны быть использованы все "табличные теги"',
+    },
+    condition: 'Запушить изменения и создать Pull Request в Github',
+    links: [
+      'https://github.com/pyatak-31/tasks/html/3'
+    ],
+    isDone: false,
+    isReady: false,
+  },
+  {
+    id: 'html-5',
+    subject: 'HTML',
+    title: 'Формы',
+    description: {
+      text: 'В html файле нужно в body создать форму для заполнения. Перед закрытием формы должна быть кнопка "Отправить", при клике на которую должен быть отправлен post запрос по url: "test.com" (используем только html). Внутри формы должны быть использованы все теги (изучены и применены различные атрибуты тегов) применяемые для форм:',
+      instructions: [
+        'input (все виды  type)',
+        'select',
+        'textarea',
+        'label',
+      ],
+    },
+    condition: 'Запушить изменения и создать Pull Request в Github',
+    links: [
+      'https://github.com/pyatak-31/tasks/html/4'
+    ],
+    isDone: false,
+    isReady: false,
+  },
+  {
+    id: 'html-6',
+    subject: 'HTML',
+    title: 'Изображения',
+    description: {
+      text: 'В html файле нужно в body создать изображение. В папке images хранить используемые изображения. Нужно изучить и использовать атрибуты:',
+      instructions: [
+        'src',
+        'width',
+        'height',
+        'alt',
+        'srcset (добавить и использовать изображения для разных размеров экрана)'
+      ],
+    },
+    condition: 'Запушить изменения и создать Pull Request в Github',
+    links: [
+      'https://github.com/pyatak-31/tasks/html/5'
     ],
     isDone: false,
     isReady: false,
