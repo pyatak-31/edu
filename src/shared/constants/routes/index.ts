@@ -4,3 +4,4 @@ export * from './html_route';
 export * from './css_route';
 export * from './js_route';
 export * from './task_route';
+export * from './roadmap_route';

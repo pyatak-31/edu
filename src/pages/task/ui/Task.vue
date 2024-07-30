@@ -8,7 +8,8 @@ import {
   GoToHtmlPageButton,
   GoToJSPageButton,
   GoToMainPageButton,
-  UIContainer
+  UIContainer,
+  UISection
 } from '@/shared/ui';
 
 interface Props {
@@ -22,7 +23,7 @@ routeGuard(task);
 </script>
 
 <template>
-  <section :class="$style.section">
+  <UISection>
     <UIContainer :class="$style.nav_container">
       <GoToMainPageButton />
   
@@ -34,22 +35,17 @@ routeGuard(task);
 
       <GoToJSPageButton v-if="task?.subject === 'JavaScript'" />
     </UIContainer>
-  </section>
-  <section :class="$style.section">
+  </UISection>
+  <UISection>
     <UIContainer>
       <WidgetTaskItem v-if="task" :task="task" />
     </UIContainer>
-  </section>
+  </UISection>
 </template>
 
 <style lang="scss" module>
-.section {
-  padding-top: 15px;
-  padding-bottom: 15px;
-
-  &_title {
-    margin-bottom: 20px;
-  }
+.section_title {
+  margin-bottom: 20px;
 }
 
 .nav_container {

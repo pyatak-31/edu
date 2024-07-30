@@ -4,7 +4,7 @@ export const SUBJECT_LIST: Array<Subject> = [
   {
     name: 'GIT',
     isReady: true,
-    isDone: false,
+    isDone: true,
   },
   {
     name: 'HTML',

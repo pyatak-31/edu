@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Task } from '@/entities/tasks';
-import { UIH1 } from '@/shared/ui';
+import { UIH1, UILink } from '@/shared/ui';
 import { computed } from 'vue';
 
 interface Props {
@@ -20,9 +20,11 @@ const taskStatusText = computed(() => props.task.isDone ? 'Выполнено' :
       <h3 :class="$style.part_title">
         Описание задачи
       </h3>
+
       <p :class="[$style.task_text, $style.task_text_description]">
         {{ task.description.text }}
       </p>
+
       <ul v-if="task.description.instructions" :class="$style.task_description_list">
         <li
           :class="$style.task_description_item"
@@ -38,6 +40,7 @@ const taskStatusText = computed(() => props.task.isDone ? 'Выполнено' :
       <h3 :class="$style.part_title">
         После выполнения
       </h3>
+
       <p :class="$style.task_text">
         {{ task.condition }}
       </p>
@@ -47,15 +50,15 @@ const taskStatusText = computed(() => props.task.isDone ? 'Выполнено' :
       <h3 :class="$style.part_title">
         Ссылки
       </h3>
-      <a
+
+      <UILink
         :class="$style.task_link"
         v-for="link in task.links"
         :key="link"
+        :text="link"
         :href="link"
         target="_blank"
-      >
-        {{ link }}
-      </a>
+      />
     </div>
 
     <div :class="$style.part">
@@ -95,16 +98,6 @@ const taskStatusText = computed(() => props.task.isDone ? 'Выполнено' :
 
   &_description {
     max-width: 1000px;
-  }
-}
-
-.task_link {
-  color: $blue-600;
-  font-size: 20px;
-  line-height: 24px;
-
-  &:hover {
-    text-decoration: underline; 
   }
 }
 

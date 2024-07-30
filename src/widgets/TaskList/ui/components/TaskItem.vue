@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Task } from '@/entities/tasks';
 import { TASK_PAGE_NAME } from '@/shared/constants';
-import { UIIcon } from '@/shared/ui';
+import { UIIcon, UILink } from '@/shared/ui';
 import { computed, useCssModule } from 'vue';
 
 interface Props {
@@ -22,23 +22,24 @@ const iconClassList = computed(() => ({
   [$style.task_icon_done]: props.task.isDone,
 }));
 
+const iconTitle = computed(() => props.task.isDone ? 'Выполнена' : 'Не выполнена')
+
 const iconName = computed(() => props.task.isDone ? 'check' : 'x');
 </script>
 
 <template>  
   <li :class="$style.task_item">
-    <RouterLink
+    <UILink
+      :text="task.title"
       :class="taskLinkClassList"
       :to="{ name:  TASK_PAGE_NAME, params: { id: task.id } }"
-    >
-      {{ task.title }}
-    </RouterLink>
+    />
 
     <UIIcon
       v-if="task.isReady"
       :class="iconClassList"
       :name="iconName"
-      title="Не выполнена"
+      :title="iconTitle"
     />
   </li>
 </template>
@@ -52,11 +53,6 @@ const iconName = computed(() => props.task.isDone ? 'check' : 'x');
 
 .task_link {
   color: purple;
-  font-size: 20px;
-
-  &:hover {
-    text-decoration: underline; 
-  }
 
   &_done {
     color: $green;

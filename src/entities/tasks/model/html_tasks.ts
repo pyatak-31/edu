@@ -40,7 +40,7 @@ export const HTML_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks/html/1'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
   {
     id: 'html-3',

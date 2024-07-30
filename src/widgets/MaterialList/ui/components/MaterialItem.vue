@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { MaterialLink } from '@/entities/materials';
+import { UILink } from '@/shared/ui';
 import { computed, useCssModule } from 'vue';
 
 interface Props {
@@ -28,13 +29,12 @@ const materialItemTypeClassList = computed(() => {
 
 <template>
   <li>
-    <a
+    <UILink
       :href="materialItem.url"
       target="_blank"
-      :class="$style.material_link"
-    >
-      {{ materialItem.label }}
-    </a>
+      :text="materialItem.label"
+    />
+
     <span :class="materialItemTypeClassList">
       {{ materialItemTypeText }}
     </span>
@@ -42,15 +42,6 @@ const materialItemTypeClassList = computed(() => {
 </template>
 
 <style lang="scss" module>
-.material_link {
-  color: $blue-640;
-  font-size: 18px;
-
-  &:hover {
-    text-decoration: underline; 
-  }
-}
-
 .material_type {
   display: inline-block;
   margin-left: 20px;

@@ -26,7 +26,7 @@ export const GIT_TASK_LIST: Array<Task> = [
     links: [
       'https://learngitbranching.js.org/?locale=ru_RU'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {

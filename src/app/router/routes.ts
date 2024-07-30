@@ -4,6 +4,7 @@ import { CSS_PAGE_ROUTE } from '@/pages/css';
 import { JAVASCRIPT_PAGE_ROUTE } from '@/pages/javascript';
 import { GIT_PAGE_ROUTE } from '@/pages/git';
 import { TASK_PAGE_ROUTE } from '@/pages/task';
+import { ROADMAP_PAGE_ROUTE } from '@/pages/roadmap';
 
 export const ROUTES_LIST = [
   MAIN_PAGE_ROUTE,
@@ -12,4 +13,5 @@ export const ROUTES_LIST = [
   JAVASCRIPT_PAGE_ROUTE,
   GIT_PAGE_ROUTE,
   TASK_PAGE_ROUTE,
+  ROADMAP_PAGE_ROUTE,
 ];

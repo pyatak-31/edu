@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { MaterialLink } from '@/entities/materials';
 import type { Task } from '@/entities/tasks';
-import { GoToMainPageButton, UIContainer, UIH1, UIH2 } from '@/shared/ui';
+import { GoToMainPageButton, UIContainer, UIH1, UIH2, UISection } from '@/shared/ui';
 import { WidgetMaterialList } from '@/widgets/MaterialList';
 import { WidgetTaskList } from '@/widgets/TaskList';
 
@@ -14,39 +14,34 @@ defineProps<Props>();
 </script>
 
 <template>
-  <section :class="$style.section">
+  <UISection>
     <UIContainer>
       <GoToMainPageButton />
     </UIContainer>
-  </section>
-  <section :class="$style.section">
+  </UISection>
+  <UISection>
     <UIContainer>
       <UIH1 :title="title" />
     </UIContainer>
-  </section>
-  <section :class="$style.section">
+  </UISection>
+  <UISection>
     <UIContainer>
       <UIH2 :class="$style.section_title" title="Вспомогательные материалы" />
   
       <WidgetMaterialList :materialList="materialList" />
     </UIContainer>
-  </section>
-  <section :class="$style.section">
+  </UISection>
+  <UISection>
     <UIContainer>
       <UIH2 :class="$style.section_title" title="Задачи" />
       
       <WidgetTaskList :taskList="taskList" />
     </UIContainer>
-  </section>
+  </UISection>
 </template>
 
 <style lang="scss" module>
-.section {
-  padding-top: 15px;
-  padding-bottom: 15px;
-
-  &_title {
-    margin-bottom: 20px;
-  }
+.section_title {
+  margin-bottom: 20px;
 }
 </style>
