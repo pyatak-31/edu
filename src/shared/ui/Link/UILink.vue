@@ -12,16 +12,14 @@ const componentName = ref(props.href ? 'a' : 'RouterLink');
 </script>
 
 <template>
-  <Component :is="componentName" :href="href" :class="$style.material_link" :to="to">
+  <Component
+    :is="componentName"
+    :href="href"
+    :class="$style.material_link"
+    :to="to"
+  >
     {{ text }}
   </Component>
-
-  <!-- <RouterLink
-      :class="taskLinkClassList"
-      :to="{ name:  TASK_PAGE_NAME, params: { id: task.id } }"
-    >
-      {{ task.title }}
-    </RouterLink> -->
 </template>
 
 <style lang="scss" module>

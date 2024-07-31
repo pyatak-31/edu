@@ -5,7 +5,7 @@ import { computed, useCssModule } from 'vue';
 
 interface Props {
   text: string,
-  routeName: string,
+  to: Object,
   disabled?: boolean,
 };
 
@@ -26,7 +26,7 @@ const linkClassList = computed(() => {
 <template>
   <RouterLink
     :class="linkClassList"
-    :to="{ name: routeName }"
+    :to="to"
     v-slot="{ navigate }"
   >
     <UIButton

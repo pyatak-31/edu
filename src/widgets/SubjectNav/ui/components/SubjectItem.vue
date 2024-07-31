@@ -1,11 +1,6 @@
 <script setup lang="ts">
-import type { Subject } from "@/entities/subjects";
-import {
-  CSS_PAGE_NAME,
-  GIT_PAGE_NAME,
-  HTML_PAGE_NAME,
-  JAVASCRIPT_PAGE_NAME,
-} from "@/shared/constants";
+import { useSubjects, type Subject } from "@/entities/subjects";
+import { SUBJECT_PAGE_NAME } from "@/shared/constants";
 import { computed, useCssModule } from "vue";
 
 interface Props {
@@ -15,35 +10,31 @@ const props = defineProps<Props>();
 
 const $style = useCssModule();
 
+const { subjectId } = useSubjects({ subjectName: props.subject.name });
+
+const subjectLinkSpecialClass = computed(() => {
+  switch (props.subject.name) {
+    case 'GIT': return $style.subject_link_git;
+    case 'HTML': return $style.subject_link_html;
+    case 'CSS': return $style.subject_link_css;
+    case 'JavaScript': return $style.subject_link_js;
+  }
+});
+
 const subjectLinkClassList = computed(() => ({
   [$style.subject_link]: true,
   [$style.done]: props.subject.isDone,
   [$style.not_ready]: !props.subject.isReady,
-  [subjectLinkSpecialClass.value]: true,
+  [subjectLinkSpecialClass.value!]: true,
 }));
-
-const subjectLinkSpecialClass = computed(() => {
-  switch (props.subject.name) {
-    case "GIT": return $style.subject_link_git;
-    case "HTML": return $style.subject_link_html;
-    case "CSS": return $style.subject_link_css;
-    case "JavaScript": return $style.subject_link_js;
-  }
-});
-
-const routeName = computed(() => {
-  switch (props.subject.name) {
-    case "GIT": return GIT_PAGE_NAME;
-    case "HTML": return HTML_PAGE_NAME;
-    case "CSS": return CSS_PAGE_NAME;
-    case "JavaScript": return JAVASCRIPT_PAGE_NAME;
-  }
-});
 </script>
 
 <template> 
   <li :class="$style.subject_item">
-    <RouterLink :class="subjectLinkClassList" :to="{ name: routeName }">
+    <RouterLink
+      :class="subjectLinkClassList"
+      :to="{ name: SUBJECT_PAGE_NAME, params: { id: subjectId } }"
+    >
       {{ subject.name }}
     </RouterLink>
   </li>

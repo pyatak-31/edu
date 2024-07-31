@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import type { MaterialLink } from '@/entities/materials';
 import type { Task } from '@/entities/tasks';
+import type { SubjectName } from '@/shared/types';
 import { GoToMainPageButton, UIContainer, UIH1, UIH2, UISection } from '@/shared/ui';
 import { WidgetMaterialList } from '@/widgets/MaterialList';
 import { WidgetTaskList } from '@/widgets/TaskList';
 
 interface Props {
-  title: string,
+  title: SubjectName,
   materialList: Array<MaterialLink>,
   taskList: Array<Task>,
 }

@@ -1,4 +1,4 @@
-export type SubjectName = 'GIT' | 'HTML' | 'CSS' | 'JavaScript';
+import type { SubjectName } from "@/shared/types";
 
 export interface Subject {
   name: SubjectName,

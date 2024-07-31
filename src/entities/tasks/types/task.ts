@@ -1,4 +1,4 @@
-import type { SubjectName } from "@/entities/subjects";
+import type { SubjectName } from "@/shared/types";
 
 interface TaskDescription {
   text: string,
@@ -6,7 +6,7 @@ interface TaskDescription {
 } 
 
 export interface Task {
-  id: string,
+  id: string, // format: SubjectId-порядковый номер
   subject: SubjectName,
   title: string,
   description: TaskDescription,

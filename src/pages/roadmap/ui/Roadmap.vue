@@ -1,77 +1,8 @@
 <script setup lang="ts">
+import { ROADMAP_LIST } from '@/entities/roadmap';
 import { GoToMainPageButton, UIContainer, UIH1, UISection } from '@/shared/ui';
 
-interface Subject {
-  title: string,
-  list?: Array<string>,
-};
 
-const subjects: Array<Subject> = [
-  {
-    title: 'Git',
-  },
-  {
-    title: 'HTML',
-    list: [
-      'Базовый HTML',
-      'Семантические теги',
-      'Таблицы',
-      'Формы',
-      'Изображения',
-    ],
-  },
-  {
-    title: 'CSS',
-    list: [
-      '?',
-    ],
-  },
-  {
-    title: 'JavaScript',
-    list: [
-      '?',
-    ],
-  },
-  {
-    title: 'Webpack/Vite',
-  },
-  {
-    title: 'TypeScript',
-    list: [
-      '?',
-    ],
-  },
-  {
-    title: 'Vue 2',
-    list: [
-      '?',
-    ],
-  },
-  {
-    title: 'Nuxt 2',
-    list: [
-      '?',
-    ],
-  },
-  {
-    title: 'Vue 3',
-    list: [
-      '?',
-    ],
-  },
-  {
-    title: 'Nuxt 3',
-    list: [
-      '?',
-    ],
-  },
-  {
-    title: 'Docker',
-    list: [
-      '?',
-    ],
-  },
-];
 </script>
 
 <template>
@@ -85,7 +16,7 @@ const subjects: Array<Subject> = [
       <UIH1 title="Roadmap"/>
 
       <div :class="$style.subject_wrapper">
-        <div v-for="subject in subjects" :key="subject.title" :class="$style.subject">
+        <div v-for="subject in ROADMAP_LIST" :key="subject.title" :class="$style.subject">
           <h3 :class="$style.subject_title">
             {{ subject.title }}
           </h3>

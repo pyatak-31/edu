@@ -1,25 +1,25 @@
 <script setup lang="ts">
 import { WidgetTaskItem } from '@/widgets/TaskItem';
-import { getTask } from '@/widgets/TaskItem/utils/getTask';
 import { routeGuard } from '../middleware';
 import {
-  GoToCssPageButton,
-  GoToGitPageButton,
-  GoToHtmlPageButton,
-  GoToJSPageButton,
   GoToMainPageButton,
+  GoToSubjectPageButton,
   UIContainer,
   UISection
 } from '@/shared/ui';
+import { useSubjects } from '@/entities/subjects';
+import { useTasks } from '@/entities/tasks';
 
 interface Props {
   id: string,
 }
 const props = defineProps<Props>();
 
+const { getTask } = useTasks();
 const task = getTask(props.id);
 
 routeGuard(task);
+const { subjectId } = useSubjects({ subjectName: task?.subject });
 </script>
 
 <template>
@@ -27,13 +27,7 @@ routeGuard(task);
     <UIContainer :class="$style.nav_container">
       <GoToMainPageButton />
   
-      <GoToGitPageButton v-if="task?.subject === 'GIT'" />
-      
-      <GoToHtmlPageButton v-if="task?.subject === 'HTML'" />
-      
-      <GoToCssPageButton v-if="task?.subject === 'CSS'" />
-
-      <GoToJSPageButton v-if="task?.subject === 'JavaScript'" />
+      <GoToSubjectPageButton :id="subjectId!" />
     </UIContainer>
   </UISection>
   <UISection>

@@ -13,7 +13,7 @@ withDefaults(defineProps<Props>(), {
 <template>
   <NavButton
     text="На главную"
-    :routeName="MAIN_PAGE_NAME"
+    :to="{ name: MAIN_PAGE_NAME }"
     :disabled="disabled"
   />
 </template>

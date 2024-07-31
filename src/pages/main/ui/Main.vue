@@ -2,7 +2,6 @@
 import { ROADMAP_PAGE_NAME } from "@/shared/constants";
 import { UIContainer, UIH1, UILink, UISection } from "@/shared/ui";
 import { WidgetSubjectNav } from "@/widgets/SubjectNav";
-
 </script>
 
 <template>
