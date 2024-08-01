@@ -17,7 +17,14 @@ export const ROADMAP_LIST: Array<RoadmapSubject> = [
   {
     title: 'CSS',
     list: [
-      '?',
+      'Расположение стилей',
+      'Селекторы',
+      'Каскадность',
+      'Псевдоселекторы',
+      'Блочная модель',
+      'Display',
+      'Позиционирование',
+      'Шрифты',
     ],
   },
   {
@@ -30,15 +37,6 @@ export const ROADMAP_LIST: Array<RoadmapSubject> = [
     title: 'Webpack',
   },
   {
-    title: 'Vite',
-  },
-  {
-    title: 'TypeScript',
-    list: [
-      '?',
-    ],
-  },
-  {
     title: 'Vue 2',
     list: [
       '?',
@@ -46,6 +44,15 @@ export const ROADMAP_LIST: Array<RoadmapSubject> = [
   },
   {
     title: 'Nuxt 2',
+    list: [
+      '?',
+    ],
+  },
+  {
+    title: 'Vite',
+  },
+  {
+    title: 'TypeScript',
     list: [
       '?',
     ],

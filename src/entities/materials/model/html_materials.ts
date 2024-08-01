@@ -36,4 +36,9 @@ export const HTML_MATERIALS: Array<MaterialLink> = [
     url: 'https://www.freecodecamp.org/learn/',
     type: 'Course',
   },
+  {
+    label: 'HTML для Начинающих - Практический Курс',
+    url: 'https://www.youtube.com/watch?v=DOEtVdkKwcU',
+    type: 'Video',
+  },
 ];

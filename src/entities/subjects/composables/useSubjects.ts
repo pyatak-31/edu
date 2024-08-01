@@ -13,14 +13,14 @@ export const useSubjects = (params: Params = {}) => {
       case 'HTML': return 'html';
       case 'CSS': return 'css';
       case 'JavaScript': return 'javascript'
-      // case 'TypeScript':
-      // case 'Webpack':
-      // case 'Vite':
-      // case 'Vue 2':
-      // case 'Vue 3':
-      // case 'Nuxt 2':
-      // case 'Nuxt 3':
-      // case 'Docker':
+      case 'Webpack': return 'webpack';
+      case 'Vue 2': return 'vue2';
+      case 'Nuxt 2': return 'nuxt2';
+      case 'Vite': return 'vite';
+      case 'TypeScript': return 'typescript';
+      case 'Vue 3': return 'vue3';
+      case 'Nuxt 3': return 'nuxt3';
+      case 'Docker': return 'docker';
     }
   });
 
@@ -30,14 +30,14 @@ export const useSubjects = (params: Params = {}) => {
       case 'html': return 'HTML';
       case 'css': return 'CSS';
       case 'javascript': return 'JavaScript'
-      // case 'typescript':
-      // case 'webpack':
-      // case 'vite':
-      // case 'vue2':
-      // case 'vue3':
-      // case 'nuxt2':
-      // case 'nuxt3':
-      // case 'docker':
+      case 'webpack': return 'Webpack';
+      case 'vue2': return 'Vue 2';
+      case 'nuxt2': return 'Nuxt 2';
+      case 'vite': return 'Vite';
+      case 'typescript': return 'TypeScript';
+      case 'vue3': return 'Vue 3';
+      case 'nuxt3': return 'Nuxt 3';
+      case 'docker': return 'Docker';
     }
   });
 
