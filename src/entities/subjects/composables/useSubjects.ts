@@ -12,6 +12,7 @@ export const useSubjects = (params: Params = {}) => {
       case 'GIT': return 'git';
       case 'HTML': return 'html';
       case 'CSS': return 'css';
+      case 'SCSS': return 'scss';
       case 'JavaScript': return 'javascript'
       case 'Webpack': return 'webpack';
       case 'Vue 2': return 'vue2';
@@ -29,6 +30,7 @@ export const useSubjects = (params: Params = {}) => {
       case 'git': return 'GIT';
       case 'html': return 'HTML';
       case 'css': return 'CSS';
+      case 'scss': return 'SCSS';
       case 'javascript': return 'JavaScript'
       case 'webpack': return 'Webpack';
       case 'vue2': return 'Vue 2';

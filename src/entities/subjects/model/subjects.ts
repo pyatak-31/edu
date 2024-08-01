@@ -27,6 +27,11 @@ export const SUBJECT_LIST: Array<Subject> = [
     isDone: false,
   },
   {
+    name: 'SCSS',
+    isReady: false,
+    isDone: false,
+  },
+  {
     name: 'Vue 2',
     isReady: false,
     isDone: false,

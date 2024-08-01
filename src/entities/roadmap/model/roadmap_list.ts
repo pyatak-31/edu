@@ -37,6 +37,12 @@ export const ROADMAP_LIST: Array<RoadmapSubject> = [
     title: 'Webpack',
   },
   {
+    title: 'SCSS',
+    list: [
+      '?',
+    ],
+  },
+  {
     title: 'Vue 2',
     list: [
       '?',

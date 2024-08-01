@@ -18,6 +18,7 @@ const subjectLinkSpecialClass = computed(() => {
     case 'GIT': return $style.subject_link_git;
     case 'HTML': return $style.subject_link_html;
     case 'CSS': return $style.subject_link_css;
+    case 'SCSS': return $style.subject_link_scss;
     case 'JavaScript': return $style.subject_link_js;
     case 'Webpack': return $style.subject_link_webpack;
     case 'Vue 2':
@@ -197,6 +198,15 @@ const subjectLinkClassList = computed(() => ({
       width: 180px;
       height: 105px;
       background-image: url('images/docker.png');
+    }
+  }
+
+  &_scss {
+
+    &:before {
+      width: 170px;
+      height: 130px;
+      background-image: url('images/scss.png');
     }
   }
 }

@@ -2,6 +2,7 @@ export type SubjectName =
 'GIT' |
 'HTML' |
 'CSS' |
+'SCSS' |
 'JavaScript' |
 'TypeScript' |
 'Webpack' |
@@ -16,6 +17,7 @@ export type SubjectId =
 'git' |
 'html' |
 'css' |
+'scss' |
 'javascript' |
 'typescript' |
 'webpack' |
