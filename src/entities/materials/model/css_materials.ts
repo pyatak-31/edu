@@ -17,7 +17,7 @@ export const CSS_MATERIALS: Array<MaterialLink> = [
     type: 'Course',
   },
   {
-    label: 'Freecodecamp (не прбовал, но рекомендуют)',
+    label: 'Freecodecamp (не пробовал, но рекомендуют)',
     url: 'https://www.freecodecamp.org/learn/',
     type: 'Course',
   },

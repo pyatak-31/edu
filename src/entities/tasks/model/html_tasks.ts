@@ -12,7 +12,7 @@ export const HTML_TASK_LIST: Array<Task> = [
     links: [
       'https://htmlacademy.ru/courses/basic-html-css'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -39,7 +39,7 @@ export const HTML_TASK_LIST: Array<Task> = [
     links: [
       'https://github.com/pyatak-31/tasks'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -62,7 +62,7 @@ export const HTML_TASK_LIST: Array<Task> = [
     links: [
       'https://github.com/pyatak-31/tasks'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -77,7 +77,7 @@ export const HTML_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
   {
     id: 'html-5',
@@ -86,7 +86,7 @@ export const HTML_TASK_LIST: Array<Task> = [
     description: {
       text: 'В html файле нужно в body создать форму для заполнения (html/4). Перед закрытием формы должна быть кнопка "Отправить", при клике на которую должен быть отправлен post запрос по url: "test.com" (используем только html). Внутри формы должны быть использованы все теги (изучены и применены различные атрибуты тегов) применяемые для форм:',
       instructions: [
-        'input (все виды  type)',
+        'input (все виды type)',
         'select',
         'textarea',
         'label',
@@ -97,7 +97,7 @@ export const HTML_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
   {
     id: 'html-6',
@@ -118,6 +118,6 @@ export const HTML_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
 ];

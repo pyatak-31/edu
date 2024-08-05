@@ -25,6 +25,9 @@ export const ROADMAP_LIST: Array<RoadmapSubject> = [
       'Display',
       'Позиционирование',
       'Шрифты',
+      'Изображения',
+      'Flexbox',
+      'Grid',
     ],
   },
   {

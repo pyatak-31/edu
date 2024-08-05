@@ -108,4 +108,22 @@ export const CSS_TASK_LIST: Array<Task> = [
     isDone: false,
     isReady: false,
   },
+  {
+    id: 'css-7',
+    subject: 'CSS',
+    title: 'Flexbox',
+    description: {
+      text: 'В задаче нужно изучить работу Flexbox (css/6). В html ничего не добавляем, все манипуляции осуществялем только flex свойствами',
+      instructions: [
+        'TODO',
+        '',
+      ],
+    },
+    condition: 'Запушить изменения и создать Pull Request в Github',
+    links: [
+      'https://github.com/pyatak-31/tasks'
+    ],
+    isDone: false,
+    isReady: false,
+  },
 ];
