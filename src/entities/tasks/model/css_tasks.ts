@@ -113,10 +113,11 @@ export const CSS_TASK_LIST: Array<Task> = [
     subject: 'CSS',
     title: 'Flexbox',
     description: {
-      text: 'В задаче нужно изучить работу Flexbox (css/6). В html ничего не добавляем, все манипуляции осуществялем только flex свойствами',
+      text: 'В задаче нужно изучить работу Flexbox (css/6)',
       instructions: [
-        'TODO',
-        '',
+        'В html ничего не добавляем',
+        'Все манипуляции осуществялем только flex свойствами в css файле',
+        'Результат должен быть как на result.png (не точь в точь по размерам)'
       ],
     },
     condition: 'Запушить изменения и создать Pull Request в Github',

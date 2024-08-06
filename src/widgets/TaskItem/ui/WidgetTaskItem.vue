@@ -51,14 +51,15 @@ const taskStatusText = computed(() => props.task.isDone ? 'Выполнено' :
         Ссылки
       </h3>
 
-      <UILink
-        :class="$style.task_link"
-        v-for="link in task.links"
-        :key="link"
-        :text="link"
-        :href="link"
-        target="_blank"
-      />
+      <ul :class="$style.task_link_list">
+        <li v-for="link in task.links" :key="link">
+          <UILink
+            :text="link"
+            :href="link"
+            target="_blank"
+          />
+        </li>
+      </ul>
     </div>
 
     <div :class="$style.part">
@@ -113,5 +114,11 @@ const taskStatusText = computed(() => props.task.isDone ? 'Выполнено' :
 .task_description_item {
   font-size: 18px;
   line-height: 22px;
+}
+
+.task_link_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 </style>

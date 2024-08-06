@@ -111,7 +111,7 @@ const subjectLinkClassList = computed(() => ({
   &_git {
     
     &:before {
-      background-image: url('images/git.png');
+      background-image: url('@images/git.png');
       width: 150px;
       height: 150px;
     }
@@ -131,28 +131,28 @@ const subjectLinkClassList = computed(() => ({
   &_html {
     
     &:before {
-      background-image: url('images/html.png');
+      background-image: url('@images/html.png');
     }
   }
 
   &_css {
 
     &:before {
-      background-image: url('images/css.png');
+      background-image: url('@images/css.png');
     }
   }
 
   &_js {
 
     &:before {
-      background-image: url('images/js.png');
+      background-image: url('@images/js.png');
     }
   }
 
   &_webpack {
 
     &:before {
-      background-image: url('images/webpack.png');
+      background-image: url('@images/webpack.png');
     }
   }
 
@@ -161,7 +161,7 @@ const subjectLinkClassList = computed(() => ({
     &:before {
       width: 160px;
       height: 125px;
-      background-image: url('images/vue.png');
+      background-image: url('@images/vue.png');
     }
   }
 
@@ -170,7 +170,7 @@ const subjectLinkClassList = computed(() => ({
     &:before {
       width: 170px;
       height: 130px;
-      background-image: url('images/nuxt.png');
+      background-image: url('@images/nuxt.png');
     }
   }
 
@@ -179,7 +179,7 @@ const subjectLinkClassList = computed(() => ({
     &:before {
       width: 145px;
       height: 145px;
-      background-image: url('images/vite.png');
+      background-image: url('@images/vite.png');
     }
   }
 
@@ -188,7 +188,7 @@ const subjectLinkClassList = computed(() => ({
     &:before {
       width: 140px;
       height: 140px;
-      background-image: url('images/ts.png');
+      background-image: url('@images/ts.png');
     }
   }
 
@@ -197,7 +197,7 @@ const subjectLinkClassList = computed(() => ({
     &:before {
       width: 180px;
       height: 105px;
-      background-image: url('images/docker.png');
+      background-image: url('@images/docker.png');
     }
   }
 
@@ -206,7 +206,7 @@ const subjectLinkClassList = computed(() => ({
     &:before {
       width: 170px;
       height: 130px;
-      background-image: url('images/scss.png');
+      background-image: url('@images/scss.png');
     }
   }
 }
