@@ -127,4 +127,38 @@ export const CSS_TASK_LIST: Array<Task> = [
     isDone: false,
     isReady: false,
   },
+  {
+    id: 'css-8',
+    subject: 'CSS',
+    title: 'Grid Layout',
+    description: {
+      text: 'В задаче нужно изучить работу Grid Layout (css/7)',
+      instructions: [
+        'В html ничего не добавляем',
+        'Все манипуляции осуществялем только grid свойствами в css файле',
+        'Результат должен быть как на result.png (не точь в точь по размерам)',
+        'Блоки section должны быть расставлены с использованием grid-template-areas',
+      ],
+    },
+    condition: 'Запушить изменения и создать Pull Request в Github',
+    links: [
+      'https://github.com/pyatak-31/tasks'
+    ],
+    isDone: false,
+    isReady: false,
+  },
+  {
+    id: 'css-9',
+    subject: 'CSS',
+    title: 'БЭМ',
+    description: {
+      text: 'В задаче нужно изучить методологию БЭМ (css/8). Написать не большую страницу на произвольную тему и стилизовать ее используя методологию БЭМ',
+    },
+    condition: 'Запушить изменения и создать Pull Request в Github',
+    links: [
+      'https://github.com/pyatak-31/tasks'
+    ],
+    isDone: false,
+    isReady: false,
+  },
 ];
