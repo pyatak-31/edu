@@ -41,9 +41,4 @@ export const CSS_MATERIALS: Array<MaterialLink> = [
     url: 'https://www.youtube.com/playlist?list=PL0MUAHwery4o9I7QQVj_RP4ZVpmdx6evz',
     type: 'Video',
   },
-  {
-    label: 'Friendly Frontend SCSS',
-    url: 'https://www.youtube.com/watch?v=pBSch5AsJWs&t=33s',
-    type: 'Video',
-  },
 ];

@@ -38,7 +38,7 @@ export const CSS_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
   {
     id: 'css-3',
@@ -52,7 +52,7 @@ export const CSS_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
   {
     id: 'css-4',

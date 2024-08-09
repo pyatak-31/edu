@@ -96,7 +96,7 @@ export const HTML_TASK_LIST: Array<Task> = [
     links: [
       'https://github.com/pyatak-31/tasks'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -117,7 +117,7 @@ export const HTML_TASK_LIST: Array<Task> = [
     links: [
       'https://github.com/pyatak-31/tasks'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
 ];

@@ -9,11 +9,11 @@ export const SUBJECT_LIST: Array<Subject> = [
   {
     name: 'HTML',
     isReady: true,
-    isDone: false,
+    isDone: true,
   },
   {
     name: 'CSS',
-    isReady: false,
+    isReady: true,
     isDone: false,
   },
   {
