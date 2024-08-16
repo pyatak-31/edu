@@ -15,6 +15,7 @@ defineProps<Props>();
 .title {
   position: relative;
   display: inline-block;
+  max-width: 500px;
   color: $gray-960;
   font-size: 35px;
   line-height: 42px;

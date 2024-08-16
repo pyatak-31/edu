@@ -37,7 +37,7 @@ export const CSS_TASK_LIST: Array<Task> = [
     links: [
       'https://github.com/pyatak-31/tasks'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -51,7 +51,7 @@ export const CSS_TASK_LIST: Array<Task> = [
     links: [
       'https://github.com/pyatak-31/tasks'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -70,7 +70,7 @@ export const CSS_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
   {
     id: 'css-5',
@@ -88,7 +88,7 @@ export const CSS_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
   {
     id: 'css-6',
@@ -106,7 +106,7 @@ export const CSS_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
   {
     id: 'css-7',
@@ -125,7 +125,7 @@ export const CSS_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
   {
     id: 'css-8',
@@ -145,7 +145,7 @@ export const CSS_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
   {
     id: 'css-9',
@@ -159,6 +159,6 @@ export const CSS_TASK_LIST: Array<Task> = [
       'https://github.com/pyatak-31/tasks'
     ],
     isDone: false,
-    isReady: false,
+    isReady: true,
   },
 ];

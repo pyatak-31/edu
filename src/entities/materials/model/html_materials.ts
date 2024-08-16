@@ -41,4 +41,9 @@ export const HTML_MATERIALS: Array<MaterialLink> = [
     url: 'https://www.youtube.com/watch?v=DOEtVdkKwcU',
     type: 'Video',
   },
+  {
+    label: 'MDN HTML',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+    type: 'Course',
+  },
 ];

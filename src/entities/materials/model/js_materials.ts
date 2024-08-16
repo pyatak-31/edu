@@ -7,7 +7,7 @@ export const JAVASCRIPT_MATERIALS: Array<MaterialLink> = [
     type: 'Course',
   },
   {
-    label: 'html5book',
+    label: 'html5book (без jQuery)',
     url: 'https://html5book.ru/javascript-jquery/',
     type: 'Course',
   },
@@ -29,6 +29,16 @@ export const JAVASCRIPT_MATERIALS: Array<MaterialLink> = [
   {
     label: 'Дэвид Флэнаган - JavaScript. Полное руководство (pdf)',
     url: './books/flanagan.pdf',
-    type: 'Book'
+    type: 'Book',
+  },
+  {
+    label: 'Codewars задачки по JS',
+    url: 'https://www.codewars.com/',
+    type: 'Course',
+  },
+  {
+    label: 'MDN JavaScript',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+    type: 'Course',
   },
 ];

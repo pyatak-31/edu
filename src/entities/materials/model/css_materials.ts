@@ -41,4 +41,9 @@ export const CSS_MATERIALS: Array<MaterialLink> = [
     url: 'https://www.youtube.com/playlist?list=PL0MUAHwery4o9I7QQVj_RP4ZVpmdx6evz',
     type: 'Video',
   },
+  {
+    label: 'MDN CSS',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    type: 'Course',
+  },
 ];
