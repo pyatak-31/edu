@@ -12,7 +12,7 @@ export const CSS_TASK_LIST: Array<Task> = [
     links: [
       'https://htmlacademy.ru/courses/basic-html-css'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -69,7 +69,7 @@ export const CSS_TASK_LIST: Array<Task> = [
     links: [
       'https://github.com/pyatak-31/tasks'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -105,7 +105,7 @@ export const CSS_TASK_LIST: Array<Task> = [
     links: [
       'https://github.com/pyatak-31/tasks'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -157,6 +157,22 @@ export const CSS_TASK_LIST: Array<Task> = [
     condition: 'Запушить изменения и создать Pull Request в Github',
     links: [
       'https://github.com/pyatak-31/tasks'
+    ],
+    isDone: false,
+    isReady: true,
+  },
+  {
+    id: 'css-10',
+    subject: 'CSS',
+    title: 'Верстка по видео',
+    description: {
+      text: 'Верстаем синхронно, вдумчиво по видео. Можно и по другим. Чем больше и разнообразнее, тем лучше',
+    },
+    condition: 'Сообщить о завершении',
+    links: [
+      'https://www.youtube.com/watch?v=f-irDQwt1l4&list=PLM6XATa8CAG4AW_GePgN71pRz3QwD0GLJ',
+      'https://www.youtube.com/watch?v=0UUK4VDblXM&list=PLM6XATa8CAG4AW_GePgN71pRz3QwD0GLJ&index=2',
+      'https://www.youtube.com/watch?v=sohdv21BVNI&list=PLM6XATa8CAG45G8-Qg79-9RDKvTuq_oUV',
     ],
     isDone: false,
     isReady: true,

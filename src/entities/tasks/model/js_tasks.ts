@@ -25,4 +25,18 @@ export const JAVASCRIPT_TASK_LIST: Array<Task> = [
     isDone: false,
     isReady: true,
   },
+  {
+    id: 'javascript-2',
+    subject: 'JavaScript',
+    title: 'CodeBasics',
+    description: {
+      text: 'Пройти задачи',
+    },
+    condition: 'Сообщить о прохождении',
+    links: [
+      'https://code-basics.com/ru/languages/javascript',
+    ],
+    isDone: false,
+    isReady: true,
+  },
 ];

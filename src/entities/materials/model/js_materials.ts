@@ -41,4 +41,14 @@ export const JAVASCRIPT_MATERIALS: Array<MaterialLink> = [
     url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     type: 'Course',
   },
+  {
+    label: 'CodeBasics',
+    url: 'https://code-basics.com/ru/languages/javascript',
+    type: 'Course',
+  },
+  {
+    label: 'Курс на hexlet',
+    url: 'https://ru.hexlet.io/courses/js-basics',
+    type: 'Course',
+  },
 ];
