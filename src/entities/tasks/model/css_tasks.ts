@@ -87,7 +87,7 @@ export const CSS_TASK_LIST: Array<Task> = [
     links: [
       'https://github.com/pyatak-31/tasks'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -124,11 +124,25 @@ export const CSS_TASK_LIST: Array<Task> = [
     links: [
       'https://github.com/pyatak-31/tasks'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
     id: 'css-8',
+    subject: 'CSS',
+    title: 'Игра Flexbox Froggy',
+    description: {
+      text: 'Пройти игру Flexbox Froggy',
+    },
+    condition: 'Сообщить о прохождении.',
+    links: [
+      'https://flexboxfroggy.com/#ru'
+    ],
+    isDone: false,
+    isReady: true,
+  },
+  {
+    id: 'css-9',
     subject: 'CSS',
     title: 'Grid Layout',
     description: {
@@ -148,7 +162,21 @@ export const CSS_TASK_LIST: Array<Task> = [
     isReady: true,
   },
   {
-    id: 'css-9',
+    id: 'css-10',
+    subject: 'CSS',
+    title: 'Игра Grid Garden',
+    description: {
+      text: 'Пройти игру Grid Garden',
+    },
+    condition: 'Сообщить о прохождении.',
+    links: [
+      'https://cssgridgarden.com/#ru'
+    ],
+    isDone: false,
+    isReady: true,
+  },
+  {
+    id: 'css-11',
     subject: 'CSS',
     title: 'БЭМ',
     description: {
@@ -162,7 +190,7 @@ export const CSS_TASK_LIST: Array<Task> = [
     isReady: true,
   },
   {
-    id: 'css-10',
+    id: 'css-12',
     subject: 'CSS',
     title: 'Верстка по видео',
     description: {

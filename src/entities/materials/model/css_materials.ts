@@ -46,4 +46,19 @@ export const CSS_MATERIALS: Array<MaterialLink> = [
     url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     type: 'Course',
   },
+  {
+    label: 'Игра Flexbox Froggy',
+    url: 'https://flexboxfroggy.com/#ru',
+    type: 'Course',
+  },
+  {
+    label: 'Игра Grid Garden',
+    url: 'https://cssgridgarden.com/#ru',
+    type: 'Course',
+  },
+  {
+    label: 'Игра Grid Attack',
+    url: 'https://codingfantasy.com/games/css-grid-attack',
+    type: 'Course',
+  },
 ];
