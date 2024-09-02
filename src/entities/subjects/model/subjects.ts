@@ -18,7 +18,7 @@ export const SUBJECT_LIST: Array<Subject> = [
   },
   {
     name: 'JavaScript',
-    isReady: false,
+    isReady: true,
     isDone: false,
   },
   {

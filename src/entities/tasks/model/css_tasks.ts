@@ -138,7 +138,7 @@ export const CSS_TASK_LIST: Array<Task> = [
     links: [
       'https://flexboxfroggy.com/#ru'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -158,7 +158,7 @@ export const CSS_TASK_LIST: Array<Task> = [
     links: [
       'https://github.com/pyatak-31/tasks'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -172,7 +172,7 @@ export const CSS_TASK_LIST: Array<Task> = [
     links: [
       'https://cssgridgarden.com/#ru'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
