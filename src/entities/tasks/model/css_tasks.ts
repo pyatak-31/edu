@@ -186,7 +186,7 @@ export const CSS_TASK_LIST: Array<Task> = [
     links: [
       'https://github.com/pyatak-31/tasks'
     ],
-    isDone: false,
+    isDone: true,
     isReady: true,
   },
   {
@@ -201,6 +201,21 @@ export const CSS_TASK_LIST: Array<Task> = [
       'https://www.youtube.com/watch?v=f-irDQwt1l4&list=PLM6XATa8CAG4AW_GePgN71pRz3QwD0GLJ',
       'https://www.youtube.com/watch?v=0UUK4VDblXM&list=PLM6XATa8CAG4AW_GePgN71pRz3QwD0GLJ&index=2',
       'https://www.youtube.com/watch?v=sohdv21BVNI&list=PLM6XATa8CAG45G8-Qg79-9RDKvTuq_oUV',
+    ],
+    isDone: false,
+    isReady: true,
+  },
+  {
+    id: 'css-13',
+    subject: 'CSS',
+    title: 'Верстка макета "Онлайн зоопарк"',
+    description: {
+      text: 'Верстаем макет (css/9). Пока без подключения JS',
+    },
+    condition: 'Запушить изменения и создать Pull Request в Github',
+    links: [
+      'https://github.com/pyatak-31/tasks',
+      'https://www.figma.com/design/vRiJVSQUTPEMUwSQv3DVRt/PetStory-online-(Copy)?node-id=0-1&node-type=CANVAS&viewport=29%252C279%252C0.09&t=6nH47WLAz1OW2YjV-0',
     ],
     isDone: false,
     isReady: true,
